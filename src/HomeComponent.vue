@@ -14,7 +14,7 @@ import ReadyComponent from './components/sections/ReadyComponent'
 import FooterComponent from './components/footer/FooterComponent'
 import FormComponent from './components/sections/FormComponent'
 export default {
-  name: 'App',
+  name: 'HomeComponent',
   components: {
     HeaderComponent,
     HeroComponent,

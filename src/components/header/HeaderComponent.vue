@@ -8,17 +8,17 @@
       <!-- Navigation and Contact Us Button -->
       <div class="flex flex-grow justify-center">
         <nav class="hidden md:flex space-x-8">
-          <a href="#home" class="text-white px-3 py-2 rounded-md text-sm font-medium bg-bgGray">Home</a>
-          <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Services</a>
-          <a href="#solutions" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Banking Solutions</a>
-          <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-          <a href="#blog" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+          <router-link to="/" class="text-white px-3 py-2 rounded-md text-sm font-medium bg-bgGray">Home</router-link>
+          <router-link to="/services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Services</router-link>
+          <router-link to="/solutions" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Banking Solutions</router-link>
+          <router-link to="/about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</router-link>
+          <router-link to="/blog" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</router-link>
         </nav>
       </div>
       <div class="flex items-center flex-none">
-        <a href="#contact" class="bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 md:block hidden">
+        <router-link to="/contact" class="bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 ml-auto">
           Contact Us
-        </a>
+        </router-link>
       </div>
       <!-- Hamburger Icon -->
       <button @click="toggleMenu" class="md:hidden focus:outline-none ml-4">
@@ -30,14 +30,14 @@
     <!-- Mobile Menu -->
     <div :class="{'block': isMenuOpen, 'hidden': !isMenuOpen}" class="md:hidden mt-4">
       <nav class="flex flex-col space-y-4">
-        <a href="#home" class="text-white px-3 py-2 rounded-md text-sm font-medium bg-bgGray">Home</a>
-        <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Services</a>
-        <a href="#solutions" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Banking Solutions</a>
-        <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-        <a href="#blog" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
-        <a href="#contact" class="bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600">
+        <router-link to="/" class="text-white px-3 py-2 rounded-md text-sm font-medium bg-bgGray">Home</router-link>
+        <router-link to="/services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Services</router-link>
+        <router-link to="/solutions" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Banking Solutions</router-link>
+        <router-link to="/about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</router-link>
+        <router-link to="/blog" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</router-link>
+        <router-link to="/contact" class="bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600">
           Contact Us
-        </a>
+        </router-link>
       </nav>
     </div>
   </header>
