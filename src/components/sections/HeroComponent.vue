@@ -121,22 +121,22 @@
     </section>
 
     <section class="bg-black text-white md:p-20 p-10">
-        <h2 class="text-center font-sans">Clients That Trust Us</h2>
-        <div class="animate-marquee overflow-hidden whitespace-nowrap">
-            <div class="flex space-x-10">
-                <img src="images/clients.png" alt="client" />
-                <img src="images/clients2.png" alt="client" />
-                <img src="images/clients.png" alt="client" />
-            </div>
-        </div>
-        <div class="animate-marquee2 overflow-hidden whitespace-nowrap mt-10">
-            <div class="flex space-x-10">
-                <img src="images/clients2.png" alt="client" />
-                <img src="images/clients.png" alt="client" />
-                <img src="images/clients2.png" alt="client" />
-            </div>
-        </div>
-    </section>
+    <h2 class="text-center font-sans mb-10">Clients That Trust Us</h2>
+    <div class="animate-marquee overflow-hidden whitespace-nowrap">
+      <div class="flex space-x-10">
+        <img src="images/clients.png" alt="client" class="h-24 md:h-32 lg:h-40" />
+        <img src="images/clients2.png" alt="client" class="h-24 md:h-32 lg:h-40" />
+        <img src="images/clients.png" alt="client" class="h-24 md:h-32 lg:h-40" />
+      </div>
+    </div>
+    <div class="animate-marquee2 overflow-hidden whitespace-nowrap mt-10">
+      <div class="flex space-x-10">
+        <img src="images/clients2.png" alt="client" class="h-24 md:h-32 lg:h-40" />
+        <img src="images/clients.png" alt="client" class="h-24 md:h-32 lg:h-40" />
+        <img src="images/clients2.png" alt="client" class="h-24 md:h-32 lg:h-40" />
+      </div>
+    </div>
+  </section>
 
     <section class="bg-black text-white md:p-20 p-10">
         <div>
