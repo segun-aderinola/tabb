@@ -1,15 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderComponent />
+  <HeroComponent />
+  <ReadyComponent />
+  <FormComponent />
+  <FooterComponent />
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeaderComponent from './components/header/HeaderComponent'
+import HeroComponent from './components/sections/HeroComponent'
+import ReadyComponent from './components/sections/ReadyComponent'
+import FooterComponent from './components/footer/FooterComponent'
+import FormComponent from './components/sections/FormComponent'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComponent,
+    HeroComponent,
+    ReadyComponent,
+    FooterComponent,
+    FormComponent
   }
 }
 </script>
@@ -21,6 +32,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 </style>

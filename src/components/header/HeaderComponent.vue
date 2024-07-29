@@ -1,0 +1,64 @@
+<template>
+  <header class="bg-black text-white p-4 font-sans border-b border-gray-800 relative" style="z-index: 20 !important">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center flex-none">
+        <img src="images/Logo.png" alt="Logo" class="h-15">
+      </div>
+      <!-- Navigation and Contact Us Button -->
+      <div class="flex flex-grow justify-center">
+        <nav class="hidden md:flex space-x-8">
+          <a href="#home" class="text-white px-3 py-2 rounded-md text-sm font-medium bg-bgGray">Home</a>
+          <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Services</a>
+          <a href="#solutions" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Banking Solutions</a>
+          <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+          <a href="#blog" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+        </nav>
+      </div>
+      <div class="flex items-center flex-none">
+        <a href="#contact" class="bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 md:block hidden">
+          Contact Us
+        </a>
+      </div>
+      <!-- Hamburger Icon -->
+      <button @click="toggleMenu" class="md:hidden focus:outline-none ml-4">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div :class="{'block': isMenuOpen, 'hidden': !isMenuOpen}" class="md:hidden mt-4">
+      <nav class="flex flex-col space-y-4">
+        <a href="#home" class="text-white px-3 py-2 rounded-md text-sm font-medium bg-bgGray">Home</a>
+        <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Services</a>
+        <a href="#solutions" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Banking Solutions</a>
+        <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+        <a href="#blog" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+        <a href="#contact" class="bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600">
+          Contact Us
+        </a>
+      </nav>
+    </div>
+  </header>
+</template>
+
+<script>
+export default {
+  name: 'HeaderComponent',
+  data() {
+    return {
+      isMenuOpen: false
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    }
+  }
+};
+</script>
+
+<style scoped>
+/* Additional styles if necessary */
+</style>
