@@ -199,20 +199,21 @@ export default {
 
 <style scoped>
 @keyframes marquee {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee2 {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(0%); }
 }
 
 .animate-marquee {
-    animation: marquee 40s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 
 .animate-marquee2 {
-    animation: marquee 30s reverse infinite;
+  animation: marquee2 15s linear infinite;
 }
 .diagonal-container {
     position: absolute;
