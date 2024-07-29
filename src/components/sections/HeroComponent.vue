@@ -122,15 +122,15 @@
 
     <section class="bg-black text-white md:p-20 p-10">
     <h2 class="text-center font-sans mb-10">Clients That Trust Us</h2>
-    <div class="animate-marquee overflow-hidden whitespace-nowrap">
-      <div class="flex space-x-10">
+    <div class="overflow-hidden">
+      <div class="animate-marquee flex space-x-10 w-full">
         <img src="images/clients.png" alt="client" class="h-24 md:h-32 lg:h-40" />
         <img src="images/clients2.png" alt="client" class="h-24 md:h-32 lg:h-40" />
         <img src="images/clients.png" alt="client" class="h-24 md:h-32 lg:h-40" />
       </div>
     </div>
-    <div class="animate-marquee2 overflow-hidden whitespace-nowrap mt-10">
-      <div class="flex space-x-10">
+    <div class="overflow-hidden mt-10">
+      <div class="animate-marquee2 flex space-x-10 w-full">
         <img src="images/clients2.png" alt="client" class="h-24 md:h-32 lg:h-40" />
         <img src="images/clients.png" alt="client" class="h-24 md:h-32 lg:h-40" />
         <img src="images/clients2.png" alt="client" class="h-24 md:h-32 lg:h-40" />
@@ -199,21 +199,25 @@ export default {
 
 <style scoped>
 @keyframes marquee {
-  0% { transform: translateX(0%); }
+  0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
 
 @keyframes marquee2 {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(0%); }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 .animate-marquee {
   animation: marquee 15s linear infinite;
+  display: flex;
+  width: 100%;
 }
 
 .animate-marquee2 {
   animation: marquee2 15s linear infinite;
+  display: flex;
+  width: 100%;
 }
 .diagonal-container {
     position: absolute;
@@ -221,5 +225,9 @@ export default {
     /* z-index: 1; */
     transform: rotate(-360deg); /* Adjust rotation angle as needed */
     transform-origin: left center;
+}
+.img-marquee {
+  max-width: 100%;
+  height: auto;
 }
 </style>
