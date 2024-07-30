@@ -10,12 +10,12 @@
         <nav class="hidden md:flex space-x-8">
           <router-link to="/" class="text-white px-3 py-2 rounded-md text-sm font-medium bg-bgGray">Home</router-link>
           <router-link to="/services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Services</router-link>
-          <router-link to="/solutions" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Banking Solutions</router-link>
+          <router-link to="/banking-solution" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Banking Solutions</router-link>
           <router-link to="/about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</router-link>
           <router-link to="/blog" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</router-link>
         </nav>
       </div>
-      <div class="flex items-center flex-none">
+      <div class="flex items-center flex-none md:block hidden">
         <router-link to="/contact" class="bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600 ml-auto">
           Contact Us
         </router-link>
@@ -32,7 +32,7 @@
       <nav class="flex flex-col space-y-4">
         <router-link to="/" class="text-white px-3 py-2 rounded-md text-sm font-medium bg-bgGray">Home</router-link>
         <router-link to="/services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Services</router-link>
-        <router-link to="/solutions" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Banking Solutions</router-link>
+        <router-link to="/banking-solution" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Banking Solutions</router-link>
         <router-link to="/about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About Us</router-link>
         <router-link to="/blog" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</router-link>
         <router-link to="/contact" class="bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-orange-600">
@@ -54,8 +54,11 @@ export default {
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
-    }
-  }
+    },
+    navigateTo(route) {
+      this.$emit('navigate', route);
+    },
+  },
 };
 </script>
 

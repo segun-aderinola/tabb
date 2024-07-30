@@ -1,10 +1,10 @@
 <template>
     <section class="bg-black text-white md:pt-40 pt-20 md:pb-40 pb-10 relative">
         <!-- Background Image Section -->
-        <div class="absolute inset-y-0 left-0 w-1/3 bg-left bg-contain h-1/2 bg-no-repeat hidden md:block" style="background-image: url('images/Vector.png'); margin-top: 5rem;"></div>
+        <div class="absolute inset-y-0 left-0 w-1/4 bg-left bg-contain h-1/2 bg-no-repeat hidden md:block" style="background-image: url('images/Vector.png'); margin-top: 2rem;"></div>
         <div class="diagonal-container top-0 right-0 md:block hidden">
             <div class="flex items-center space-x-2 p-2">
-                <img src="images/heropage scroller_black.png" alt="Icon" class="h-full w-full">
+                <img src="images/heropage scroller_black.png" alt="Icon" class="h-1/2 w-full">
             </div>
         </div>
         <!-- Content Section -->
@@ -150,39 +150,39 @@
 
     <section class="bg-black text-white p-6 md:p-10 lg:p-20">
         <div class="flex flex-wrap items-center justify-between space-y-10 md:space-y-0 md:-mx-2">
-            <div class="w-full md:w-1/2 p-5 border border-gray-700 h-auto md:h-60">
-                <div class="p-5 flex items-center space-x-4">
+            <div class="font-sans w-full md:w-1/2 p-5 border border-gray-700 h-auto md:h-60">
+                <div class="p-4 flex items-center space-x-4">
                     <img src="images/recycle.png" alt="Logo" class="w-20 h-auto" />
-                    <span class="font-bold text-xl">Expertise</span>
+                    <span class="font-bold text-xl text-left">Expertise</span>
                 </div>
-                <div class="pt-5 text-left">
+                <div class="pl-5 text-left">
                     Our team consists of highly skilled professionals who have a deep understanding of the digital landscape and experience spanning FinTech, EduTech, PropTech, FMCG, and AgroTech, in roles that have resulted in substantial user growth and data-driven decision-making.
                 </div>
             </div>
             <div class="w-full md:w-1/2 p-5 border border-gray-700 h-auto md:h-60">
-                <div class="p-5 flex items-center space-x-4">
+                <div class="p-4 flex items-center space-x-4">
                     <img src="images/people.png" alt="Logo" class="w-20 h-auto" />
-                    <span class="font-bold text-xl">Client-Centric Approach</span>
+                    <span class="font-bold text-xl text-left font-sans">Client-Centric Approach</span>
                 </div>
-                <div class="pt-5 text-left">
+                <div class="p-3 text-left font-sans">
                     We prioritize our clients and their unique needs. We listen to your ideas, challenges, and goals, and tailor our services to meet your specific requirements. Your success is our success.
                 </div>
             </div>
-            <div class="w-full md:w-1/2 p-5 border border-gray-700 h-auto md:h-60">
-                <div class="p-5 flex items-center space-x-4">
+            <div class="font-sans w-full md:w-1/2 p-5 border border-gray-700 h-auto md:h-60">
+                <div class="p-4 flex items-center space-x-4">
                     <img src="images/guard.png" alt="Logo" class="w-20 h-auto" />
-                    <span class="font-bold text-xl">Results-Driven Solutions</span>
+                    <span class="font-bold text-xl text-left">Results-Driven Solutions</span>
                 </div>
-                <div class="pt-5 text-left">
+                <div class="p-3 text-left">
                     Our primary focus is on delivering results. We combine creativity and technical expertise to create digital products that drive business growth, enhance user experiences, and provide a competitive advantage.
                 </div>
             </div>
-            <div class="w-full md:w-1/2 p-5 border border-gray-700 h-auto md:h-60">
-                <div class="p-5 flex items-center space-x-4">
+            <div class="font-sans w-full md:w-1/2 p-5 border border-gray-700 h-auto md:h-60">
+                <div class="p-4 flex items-center space-x-4">
                     <img src="images/crown.png" alt="Logo" class="w-20 h-auto" />
-                    <span class="font-bold text-xl">Collaborative Partnership</span>
+                    <span class="font-bold text-xl text-left">Collaborative Partnership</span>
                 </div>
-                <div class="pt-5 text-left">
+                <div class="p-3 text-left">
                     We value long-term relationships with our clients. We see ourselves as your digital partner, providing ongoing support, maintenance, and updates to ensure your digital products continue to thrive.
                 </div>
             </div>

@@ -17,21 +17,21 @@
                 <div class="flex pt-6 md:pt-10 -mx-2">
                     <div class="flex space-x-2 w-full px-2">
                         <input type="checkbox" class="custom-checkbox bg-bgGray" />
-                        <span>Core Banking Solutions</span>
+                        <span class="text-left">Core Banking Solutions</span>
                     </div>
                     <div class="flex space-x-2 w-full px-2">
                         <input type="checkbox" class="custom-checkbox bg-bgGray" />
-                        <span>Collaboration</span>
+                        <span class="text-left">Collaboration</span>
                     </div>
                 </div>
-                <div class="flex pt-6 md:pt-10 -mx-2">
+                <div class="flex pt-6 md:pt-10 -mx-2 justify-between">
                     <div class="flex space-x-2 w-full px-2">
                         <input type="checkbox" class="custom-checkbox bg-bgGray" />
-                        <span>Tech Development</span>
+                        <span class="text-left">Tech Development</span>
                     </div>
                     <div class="flex space-x-2 w-full px-2">
                         <input type="checkbox" class="custom-checkbox bg-bgGray" />
-                        <span>Others</span>
+                        <span class="text-left">Others</span>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                     <div class="relative w-full">
                         <input type="range" min="1000" max="10000" step="100" v-model="budget" @input="updateBackground"
                             class="range-slider w-full" :style="{ background: sliderBackground }" />
-                        <div class="flex justify-between absolute top-6 w-full px-2">
+                        <div class="flex justify-between absolute top-6 w-full px-2 mt-5">
                             <span>${{ budget }}</span>
                             <span>${{ budgetMax }}</span>
                         </div>
@@ -109,8 +109,8 @@ export default {
 .range-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: #ff8c00;
     border: 5px solid #333;
     border-radius: 50%;
@@ -119,8 +119,8 @@ export default {
 }
 
 .range-slider::-moz-range-thumb {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: #ff8c00;
     border: 5px solid #333;
     border-radius: 50%;
@@ -129,8 +129,8 @@ export default {
 }
 
 .range-slider::-ms-thumb {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: #ff8c00;
     border: 5px solid #333;
     border-radius: 50%;
