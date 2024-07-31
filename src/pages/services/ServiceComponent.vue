@@ -1,5 +1,4 @@
 <template>
-   <HeaderComponent />
    <section class="bg-black text-white p-10 md:p-40">
     <h1 class="text-5xl text-left border-b border-gray-500 pb-3 w-10 uppercase">Services</h1>
     <div class="absolute flex items-center justify-center inset-y-0 w-20 bg-left bg-contain h-1/2 bg-no-repeat hidden md:block" style="background-image: url('images/S.png'); margin-top: 10.5rem;"></div>

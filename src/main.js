@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import App from './HomeComponent.vue'
+import App from './App.vue'
 // import ServiceComponent from './pages/services/ServiceComponent.vue'
 import './assets/tailwind.css';
 import router from './router';
