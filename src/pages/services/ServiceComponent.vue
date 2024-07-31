@@ -1,18 +1,20 @@
 <template>
-   <section class="bg-black text-white p-10 md:p-40">
+  <section class="bg-black text-white p-10 md:p-40 relative">
+  <div class="absolute flex items-center justify-center inset-y-0 w-40 bg-left bg-contain h-1/2 bg-no-repeat hidden md:block" style="background-image: url('images/S.png'); margin-top: 14rem; z-index: 1;"></div>
+  <div class="relative z-10">
     <h1 class="text-5xl text-left border-b border-gray-500 pb-3 w-10 uppercase">Services</h1>
-    <div class="absolute flex items-center justify-center inset-y-0 w-20 bg-left bg-contain h-1/2 bg-no-repeat hidden md:block" style="background-image: url('images/S.png'); margin-top: 10.5rem;"></div>
     <div class="text-left mt-5 font-sans">
-       <h1 class="text-2xl font-bold"> Comprehensive Tech Solutions </h1>
-       <p>From Ideation to Growth, We've Got You Covered</p>
+      <h1 class="text-4xl font-bold">Comprehensive Tech Solutions</h1>
+      <p class="text-xl">From Ideation to Growth, We've Got You Covered</p>
     </div>
-   </section>
+  </div>
+</section>
 
    <section class="bg-black text-white ">
     <div class="border border-gray-700">
         <h1 class="text-4xl font-bold text-left pt-10 pl-10">Ideation, Brand & Product Design</h1>
         <div class="flex space-x-4 font-sans p-10">
-            <div class="bg-bgGray text-white px-6 rounded hover:bg-gray-600 p-2">Our design services include:</div>
+            <div class="bg-bgGray text-white px-6 rounded p-2">Our design services include:</div>
         </div>
 
         <div class="text-left text-2xl pt-10 pb-10 border border-gray-700 pl-10 text-gray-500"> Branding and Identity </div>
@@ -109,7 +111,7 @@
     <div class="border border-gray-700 mt-10">
         <h1 class="text-4xl font-bold text-left pt-10 pl-10">Project Management & Engineering (Development)</h1>
         <div class="flex space-x-4 font-sans p-10">
-            <div class="bg-bgGray text-white px-6 rounded hover:bg-gray-600 p-2">Our engineering services include:</div>
+            <div class="bg-bgGray text-white px-6 rounded p-2">Our engineering services include:</div>
         </div>
 
         <div class="text-left text-2xl pt-10 pb-10 border border-gray-700 pl-10 text-gray-500"> Web Development </div>
@@ -296,7 +298,7 @@
     <div class="border border-gray-700 mt-10">
         <h1 class="text-4xl font-bold text-left pt-10 pl-10">Go To Market & Growth Hacking</h1>
         <div class="flex space-x-4 font-sans p-10">
-            <div class="bg-bgGray text-white px-6 rounded hover:bg-gray-600 p-2">Our marketing services include:</div>
+            <div class="bg-bgGray text-white px-6 rounded p-2">Our marketing services include:</div>
         </div>
 
         <div class="text-left text-2xl pt-10 pb-10 border border-gray-700 pl-10 text-gray-500"> Market Entry Strategy </div>
